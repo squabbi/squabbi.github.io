@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Squabbi's Keebs</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/style.css">
+        <!-- <script src="https://kit.fontawesome.com/883e42736d.js" crossorigin="anonymous"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <!-- Header Image -->
+        <header class="keebhead">
+            <div class="container h-100">
+                <!-- Insert Text Here -->
+            </div>
+          </header>
+
+        <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
+            <!-- Brand -->
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img class="rounded" src="../assets/squabbi.jpg" alt="Logo" style="width:40px;">
+                </a>
+    
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Nav Items -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../">Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Keebs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container pt-3 my-3 h-75 sticky-footer-wrapper">
+            <div class="row">
+                <h1>Keeb Showcase</h1>
+                <p>This is my collection of keyboards that I've procured since 2016. Just a way of keeping track of them and writing a bit about them in case anyone finds it interesting. Some of these offer comparisons, videos or just sound clips. Enjoy!</p>
+            </div>
+            <div class="alert alert-info" role="alert">
+                More keebs will be updated as we go along! Only the ErgoDox has real substance now.
+            </div>
+            <div id="keeb-deck">
+                <!-- Generated HTML for keebs goes here -->
+            </div>
+        </div>
+
+        <footer id="sticky-footer" class="py-4 bg-dark text-white">
+            <div class="container text-center">
+                <small>Copyright &copy; squabbi.com</small>
+            </div>
+        </footer>
+    </body>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            loadKeebsXML();
+        });
+
+
+        function loadKeebsXML() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    generateKeebCards(this);
+                }
+            };
+            xmlhttp.open("GET", "../assets/keebs.xml");
+            xmlhttp.send();
+        }
+
+        function generateKeebCards(xml) {
+            var currCol;
+            var xmlDoc = xml.responseXML;
+            var deck = "";
+            var x = xmlDoc.getElementsByTagName("keeb");
+            var splitCol = 3;
+            var total = x.length;
+            for (currCol = 1; currCol <= total; currCol++) {
+                // If i is not a factor of 3, start new row
+                if (currCol % splitCol == 1) {
+                    deck += "<div class='row'><div class='card-deck'>"
+                }
+                deck += "<div class='card mb-3' style='max-width: 22rem;'>";
+                deck += "<img src='../assets/keebs/" + x[currCol-1].getElementsByTagName("image")[0].childNodes[0].nodeValue + "' class='card-img-top'" + "alt='" + x[currCol-1].getElementsByTagName("title")[0].childNodes[0].nodeValue + "'>";
+                deck += "<div class='card-body d-flex flex-column'>";
+                deck += "<h5 class='card-title'>" + x[currCol-1].getElementsByTagName("title")[0].childNodes[0].nodeValue + "</h5>";
+                deck += "<p class='card-text'>" + x[currCol-1].getElementsByTagName("description")[0].childNodes[0].nodeValue + "</p>";
+                deck += "<a href='" + x[currCol-1].getElementsByTagName("link")[0].childNodes[0].nodeValue + "' class='mt-auto btn btn-primary'>View Keeb</a></div>";
+                deck += "<div class='card-footer'><small class='text-muted'>" + x[currCol-1].getElementsByTagName("year")[0].childNodes[0].nodeValue + "</small></div>";
+                deck += "</div>";
+
+                // Check if current i is a factor of 3
+                if (currCol % splitCol == 0) {
+                    deck += "</div></div>"
+                }
+            }
+            document.getElementById("keeb-deck").innerHTML = deck;
+        }
+    </script>
+</html>
