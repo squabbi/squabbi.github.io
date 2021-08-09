@@ -1,78 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Squabbi | Home</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/socials.css">
-        <script src="https://kit.fontawesome.com/883e42736d.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <!-- Header Image -->
-        <header class="masthead">
-            <div class="container h-100">
-                <!-- Insert Text Here -->
-            </div>
-          </header>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Squabbi says: Hello!</title>
+    <link rel="shortcut icon" type="image/jpg" href="assets/images/squabbi.png"/>
+    <link rel="stylesheet" href="css/mystyles.css">
+  </head>
+  <body class="has-navbar-fixed-top">
 
-        <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
-            <!-- Brand -->
-            <div class="container">
-                <a class="navbar-brand" href="/">
-                    <img class="rounded" src="assets/squabbi.jpg" alt="Logo" style="width:40px;">
-                </a>
-    
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
-                <!-- Nav Items -->
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="keebs/">Keebs</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        
-        <div class="container pt-3 my-3 sticky-footer-wrapper">
-            <h1>Hello World</h1>
-            <p>Hello and welcome! This is the gateway to most of my personal projects, hobbies and interests. I hope to keep most of this updated with new and exciting things. You can follow me on my various social links below. I'm easiest to reach on YouTube, Twitter and Discord.</p>
+    <nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://squabbi.com">
+          <img src="assets/images/squabbi.png" height="28">
+        </a>
+      </div>
 
-            <h2>About</h2>
-            <p>Hobbling along the road I found myself liking technology, mostly consumer desktop and laptops, mobile technology in the phone deparment; and now mechanical keyboards (what a world of hurt and pain... for my wallet).</p>
+      <div id="navbarMain" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item is-active">
+            Home
+          </a>
 
-            <p>I have a YouTube channel where I post mostly tutorials on how to do particular things with your Google Pixel phone, and some other Android phones. Things like rooting your phone, updating it and trying out custom ROMs. I try to make them as easy to follow as possible!</p>
-
-            <h2>Socials</h2>
-
-            <p>Come follow me on the following platforms. Probably most active on Discord. 😎</p>
-
-            <div class="row align-items-center justify-content-center">
-                <a href="https://twitter.com/squabbikong" target="_blank" class="btn-social btn-twitter"><i class="fa fa-twitter"></i></a>
-                <a href="https://youtube.com/maowdroid" target="_blank" class="btn-social btn-youtube"><i class="fa fa-youtube"></i></a>
-                <a href="https://instagram.com/squabbi.shibe" target="_blank" class="btn-social btn-instagram"><i class="fa fa-instagram"></i></a>
-                <a href="https://invite.gg/maowdroid" target="_blank" class="btn-social btn-discord"><i class="fab fa-discord"></i></a>
-            </div>
+          <a class="navbar-item">
+            Projects
+          </a>
+          <a class="navbar-item" href="keebs/index.html">
+            Keebs
+          </a>
+          <a class="navbar-item">
+            Dogeings
+          </a>
         </div>
 
-        <footer id="sticky-footer" class="py-4 bg-dark text-white sticky-bottom">
-            <div class="container text-center">
-                <small>Copyright &copy; squabbi.com</small>
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Presence
+            </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://youtube.com/c/maowdroid">
+                YouTube (MaowDroid)
+              </a>
+              <a class="navbar-item" href="https://instagram.com/squabbi.shibe">
+                Instagram
+              </a>
+              <a class="navbar-item" href="https://twitch.tv/squabbi">
+                Twitch.tv
+              </a>
             </div>
-        </footer>
-    </body>
+          </div>
+
+          <div class="navbar-item">
+            <div class="buttons">
+                <a class="button is-primary" href="https://ko-fi.com/squabbi">
+                  Donate
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Title -->
+      <div class="block">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <figure class="image is-128x128">
+              <img class="is-rounded" src="assets/images/home/profile.png">
+            </figure>
+          </div>
+          <div class="column is-full">
+            <h1 class="title">
+              いらっしゃいませ
+            </h1>
+            <div class="subtitle">
+              Squabbi is <strong>online</strong>.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+  
+      <!-- Hello -->
+
+      <h4 class="title is-4">Hi! 👋</h4>
+      <div class="block">
+        Hello everyone and welcome! Here you'll find information about me, my hobbies and interests! You may have found me from my YouTube channel, MaowDroid - where I post videos, mostly tutorials for the Google Pixel line of phones; or you may have seen me on XDA-Developers from one of my toolkits - or maybe you've stumbled upon me on Instagram where I post mostly my creative side of me there.
+      </div>
+
+      <!-- Connect -->
+      
+      <h4 class="title is-4">Connection Ports 🔌</h4>
+      <div class="block">
+        You can chit-chat with me through these platforms! Occasionally you'll find me streaming on Twitch, it might be gaming or cooking French Toast.
+      </div>
+
+      <div class="columns is-mobile is-centered">
+        <div class="column is-half">
+          <div class="box">
+            <div class="buttons is-centered">
+              <button class="button">
+                <span class="icon is-small">
+                  <i class="fas fa-discord"></i>
+                </span>
+                <span>Discord</span>
+              </button>
+
+              <button class="button">
+                <span class="icon is-small">
+                  <i class="fas fa-instagram"></i>
+                </span>
+                <span>Instagram</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notable Works -->
+      <h4 class="title is-4">Notable Works</h4>
+      <div class="content">
+        
+      </div>
+
+      <!-- About -->
+      <h4 class="title is-4">me.About()</h4>
+      <div class="content">
+        <p>
+          I'm currently studying at the University of Technology Sydney, and it looks like I'm going to be here for a while - because 5 years wasn't enough. I'm hoping to leave with a Bachelor of Science in IT and a Bachelor of Arts in International Studies.
+        </p>
+        <p>
+          I chose that because it seemed fun to learn another language and go overseas, and because I've been fortunate enough to have the support to do so.
+        </p>
+        <p>
+          I love playing computer games, watching YouTube, making the occasional YouTube video for MaowDroid - but I find helping people and creating things some of the most rewarding things out there. I have an interest in most things technology, but I do have an eye for the creative and exciting ~
+        </p>
+        <p>
+          At home is just a world of tinkering, Raspberry Pi’s, setting up a modest home server, playing around with the home network – and probably being the single cause of most of our household’s internet downtime…
+        </p>
+        <p>
+          Feel free to check out some of my other displays of creativity, probably found on Instagram and my other YouTube channel. But if you prefer some reading, feel free to check out my postings and 'dogeings'.
+        </p>
+      </div>
+      
+    </div> <!-- End Section -->
+  </section>
+  </body>
 </html>
