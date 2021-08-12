@@ -1,67 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Squabbi says: Hello!</title>
-    <link rel="shortcut icon" type="image/jpg" href="assets/images/squabbi.png"/>
-    <link rel="stylesheet" href="css/mystyles.css">
-  </head>
-  <body class="has-navbar-fixed-top">
 
-    <nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="https://squabbi.com">
-          <img src="assets/images/squabbi.png" height="28">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Squabbi says: Hello!</title>
+  <link rel="shortcut icon" type="image/jpg" href="assets/images/squabbi.png" />
+  <link rel="stylesheet" href="css/mystyles.css">
+</head>
+
+<body class="has-navbar-fixed-top">
+
+  <nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://squabbi.com">
+        <img src="assets/images/squabbi.png" height="28">
+      </a>
+
+      <!-- Mobile Nav Burger -->
+      <a id="burger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarMain">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarMain" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item is-active">
+          Home
+        </a>
+
+        <a class="navbar-item">
+          Projects
+        </a>
+        <a class="navbar-item" href="keebs/">
+          Keebs
+        </a>
+        <a class="navbar-item" href="https://dogeings.squabbi.com/">
+          Dogeings
         </a>
       </div>
 
-      <div id="navbarMain" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item is-active">
-            Home
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Presence
           </a>
 
-          <a class="navbar-item">
-            Projects
-          </a>
-          <a class="navbar-item" href="keebs/index.html">
-            Keebs
-          </a>
-          <a class="navbar-item">
-            Dogeings
-          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://youtube.com/c/maowdroid">
+              YouTube (MaowDroid)
+            </a>
+            <a class="navbar-item" href="https://instagram.com/squabbi.shibe">
+              Instagram
+            </a>
+            <a class="navbar-item" href="https://twitch.tv/squabbi">
+              Twitch.tv
+            </a>
+          </div>
         </div>
 
-        <div class="navbar-end">
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              Presence
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary" href="https://ko-fi.com/squabbi">
+              Donate
             </a>
-
-            <div class="navbar-dropdown">
-              <a class="navbar-item" href="https://youtube.com/c/maowdroid">
-                YouTube (MaowDroid)
-              </a>
-              <a class="navbar-item" href="https://instagram.com/squabbi.shibe">
-                Instagram
-              </a>
-              <a class="navbar-item" href="https://twitch.tv/squabbi">
-                Twitch.tv
-              </a>
-            </div>
-          </div>
-
-          <div class="navbar-item">
-            <div class="buttons">
-                <a class="button is-primary" href="https://ko-fi.com/squabbi">
-                  Donate
-                </a>
-            </div>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
   <section class="section">
     <div class="container">
@@ -86,38 +96,42 @@
       </div>
 
       <br>
-  
+
       <!-- Hello -->
 
       <h4 class="title is-4">Hi! 👋</h4>
       <div class="block">
-        Hello everyone and welcome! Here you'll find information about me, my hobbies and interests! You may have found me from my YouTube channel, MaowDroid - where I post videos, mostly tutorials for the Google Pixel line of phones; or you may have seen me on XDA-Developers from one of my toolkits - or maybe you've stumbled upon me on Instagram where I post mostly my creative side of me there.
+        Hello everyone and welcome! Here you'll find information about me, my hobbies and interests! You may have found
+        me from my YouTube channel, MaowDroid - where I post videos, mostly tutorials for the Google Pixel line of
+        phones; or you may have seen me on XDA-Developers from one of my toolkits - or maybe you've stumbled upon me on
+        Instagram where I post mostly my creative side of me there.
       </div>
 
       <!-- Connect -->
-      
+
       <h4 class="title is-4">Connection Ports 🔌</h4>
       <div class="block">
-        You can chit-chat with me through these platforms! Occasionally you'll find me streaming on Twitch, it might be gaming or cooking French Toast.
+        You can chit-chat with me through these platforms! Occasionally you'll find me streaming on Twitch, it might be
+        gaming or cooking French Toast.
       </div>
 
       <div class="columns is-mobile is-centered">
         <div class="column is-half">
           <div class="box">
             <div class="buttons is-centered">
-              <button class="button">
+              <a class="button" href="#">
                 <span class="icon is-small">
-                  <i class="fas fa-discord"></i>
+                  <i class="fab fa-discord"></i>
                 </span>
                 <span>Discord</span>
-              </button>
+              </a>
 
-              <button class="button">
+              <a class="button" href="https://instagram.com/squabbi.shibe" target="_blank">
                 <span class="icon is-small">
-                  <i class="fas fa-instagram"></i>
+                  <i class="fab fa-instagram"></i>
                 </span>
                 <span>Instagram</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -126,30 +140,40 @@
       <!-- Notable Works -->
       <h4 class="title is-4">Notable Works</h4>
       <div class="content">
-        
+
       </div>
 
       <!-- About -->
       <h4 class="title is-4">me.About()</h4>
       <div class="content">
         <p>
-          I'm currently studying at the University of Technology Sydney, and it looks like I'm going to be here for a while - because 5 years wasn't enough. I'm hoping to leave with a Bachelor of Science in IT and a Bachelor of Arts in International Studies.
+          I'm currently studying at the University of Technology Sydney, and it looks like I'm going to be here for a
+          while - because 5 years wasn't enough. I'm hoping to leave with a Bachelor of Science in IT and a Bachelor of
+          Arts in International Studies.
         </p>
         <p>
-          I chose that because it seemed fun to learn another language and go overseas, and because I've been fortunate enough to have the support to do so.
+          I chose that because it seemed fun to learn another language and go overseas, and because I've been fortunate
+          enough to have the support to do so.
         </p>
         <p>
-          I love playing computer games, watching YouTube, making the occasional YouTube video for MaowDroid - but I find helping people and creating things some of the most rewarding things out there. I have an interest in most things technology, but I do have an eye for the creative and exciting ~
+          I love playing computer games, watching YouTube, making the occasional YouTube video for MaowDroid - but I
+          find helping people and creating things some of the most rewarding things out there. I have an interest in
+          most things technology, but I do have an eye for the creative and exciting ~
         </p>
         <p>
-          At home is just a world of tinkering, Raspberry Pi’s, setting up a modest home server, playing around with the home network – and probably being the single cause of most of our household’s internet downtime…
+          At home is just a world of tinkering, Raspberry Pi’s, setting up a modest home server, playing around with the
+          home network – and probably being the single cause of most of our household’s internet downtime…
         </p>
         <p>
-          Feel free to check out some of my other displays of creativity, probably found on Instagram and my other YouTube channel. But if you prefer some reading, feel free to check out my postings and 'dogeings'.
+          Feel free to check out some of my other displays of creativity, probably found on Instagram and my other
+          YouTube channel. But if you prefer some reading, feel free to check out my postings and 'dogeings'.
         </p>
       </div>
-      
+
     </div> <!-- End Section -->
   </section>
-  </body>
+</body>
+
+<script src="js/index.js"></script>
+
 </html>
