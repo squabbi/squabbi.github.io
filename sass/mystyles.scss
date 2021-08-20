@@ -8,12 +8,15 @@ $fa-font-path: "../assets/webfonts";
 @import "fa/solid.scss";
 @import "fa/brands.scss";
 
+// Import custom mmods
+@import "custom.sass";
+
 // Set your brand colors
 $blue: #7fcfda;
 $pink: #FA7C91;
 $purple: #666377;
 $pink-light: #cfb8c9;
-$pink-lighter: #e9d6dd;
+$pink-lighter: #fdf9fa;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
@@ -42,3 +45,4 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
 @import "../node_modules/bulma/sass/elements/icon.sass";
+@import "../node_modules/bulma/sass/components/breadcrumb.sass";
