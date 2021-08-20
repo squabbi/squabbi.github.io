@@ -12,67 +12,57 @@
 <body class="has-navbar-fixed-top">
 
 	<nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
-		<div class="navbar-brand">
-			<a class="navbar-item" href="https://squabbi.com">
-				<img src="../assets/images/squabbi.png" height="28">
-			</a>
-
-			<!-- Mobile Nav Burger -->
-			<a id="burger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-				data-target="navbarMain">
-				<span aria-hidden="true"></span>
-				<span aria-hidden="true"></span>
-				<span aria-hidden="true"></span>
-			</a>
-
-		</div>
-
-		<div id="navbarMain" class="navbar-menu">
-			<div class="navbar-start">
-				<a class="navbar-item">
-					Home
+		<div class="container">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="https://squabbi.com">
+					<img src="../assets/images/squabbi.png" height="28">
 				</a>
 
-				<a class="navbar-item is-active">
-					Projects
-				</a>
-				<a class="navbar-item" href="#">
-					Keebs
-				</a>
-				<a class="navbar-item">
-					Dogeings
+				<!-- Mobile Nav Burger -->
+				<a id="burger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+					data-target="navbarMain">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
 				</a>
 			</div>
 
-			<div class="navbar-end">
-				<div class="navbar-item has-dropdown is-hoverable">
-					<a class="navbar-link">
-						Presence
-					</a>
-
-					<div class="navbar-dropdown">
-						<a class="navbar-item" href="https://youtube.com/c/maowdroid">
-							YouTube (MaowDroid)
-						</a>
-						<a class="navbar-item" href="https://instagram.com/squabbi.shibe">
-							Instagram
-						</a>
-						<a class="navbar-item" href="https://twitch.tv/squabbi">
-							Twitch.tv
-						</a>
-					</div>
+			<div id="navbarMain" class="navbar-menu">
+				<div class="navbar-start">
+					<a class="navbar-item" href="../">Home</a>
+					<a class="navbar-item is-active" href="#">Projects</a>
+					<a class="navbar-item" href="../keebs/">Keebs</a>
+					<a class="navbar-item" href="../maowdroid/">MaowDroid</a>
 				</div>
 
-				<div class="navbar-item">
-					<div class="buttons">
-						<a class="button is-primary" href="https://ko-fi.com/squabbi">
-							<strong>Donate</strong>
-						</a>
+				<div class="navbar-end">
+					<a class="navbar-item" href="https://dogeings.squabbi.com/" target="_blank">Dogeings</a>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link">Presence</a>
+						<div class="navbar-dropdown">
+							<a class="navbar-item" href="https://youtube.com/c/maowdroid" target="_blank">YouTube
+								(MaowDroid)</a>
+							<a class="navbar-item" href="https://instagram.com/squabbi.shibe"
+								target="_blank">Instagram</a>
+							<a class="navbar-item" href="https://twitch.tv/squabbi" target="_blank">Twitch.tv</a>
+						</div>
+					</div>
+
+					<div class="navbar-item">
+						<div class="buttons">
+							<a class="button is-primary" href="https://ko-fi.com/squabbi" target="_blank">
+								<span class="icon">
+									<i class="fas fa-coffee"></i>
+								</span>
+								<span>Donate</span>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</nav>
+	<!-- END NAVBAR -->
 
 	<section class="section">
 		<div class="container">
@@ -82,7 +72,7 @@
 				<div class="columns is-vcentered">
 					<div class="column">
 						<figure class="image is-128x128">
-							<img class="is-rounded" src="assets/keebs/title.jpg">
+							<img class="is-rounded" src="../assets/images/home/profile.png">
 						</figure>
 					</div>
 					<div class="column is-full">
@@ -102,152 +92,44 @@
 
 			<h4 class="title is-4">Hello, world!</h4>
 			<div class="block">
-				You can read more about the projects that I've worked on over the years! I'll pin my most notable ones at the
+				You can read more about the projects that I've worked on over the years! I'll pin my most notable ones
+				at the
 				top, but we'll see what gets added here by the end!
 			</div>
 
 			<!-- Keeb Collection -->
 
 			<h4 class="title is-4">Starred 🌟</h4>
-			<div class="block">
-				Here you'll find more information and a little showcase of the keyboards that I have, or had before.
-			</div>
 
-			<div class="card">
-				<div class="card-image">
-					<figure class="image is-4by3">
-						<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-					</figure>
-				</div>
-				<div class="card-content">
-					<p class="title is-4">ErgoDox</p>
-					<p class="subtitle is-6">Pan-pan, half split ortholinear keyboard.</p>
-					<div class="content">
-						My first 'custom' mechanical keyboard, of course it had to be outragous compared with all the ones I've
-						owned previously, which were just plain, plasic black slabs.
+			<div class="columns">
+				<div class="column is-half">
+					<div class="card">
+						<div class="card-content">
+							<div class="media">
+								<div class="media-left">
+									<figure class="image is-48x48">
+										<img src="https://f-droid.org/repo/mattecarra.accapp/en/icon_xGo0woj861vsFToZK6pvrsPjfxQs0Laojv4m7JDKBdM=.png"
+											alt="ACCA icon">
+									</figure>
+								</div>
+								<div class="media-content">
+									<p class="title is-4">ACCA (Advanced Charging Controller App)</p>
+									<p class="subtitle is-6">A front-end for the ACC terminal app.</p>
+								</div>
+							</div>
+
+							<div class="content">
+								This was the first ever project that I had a hand in working on, it is basically a GUI
+								for the ACC daemon that runs in the background controlling your device's charge &
+								discharge behaviour.
+							</div>
+						</div>
+						<div class="card-footer">
+							<a href="acca/" class="card-footer-item">About Project</a>
+							<a href="https://github.com/MatteCarra/AccA" class="card-footer-item"
+								target="_blank">Project Source (GitHub)</a>
+						</div>
 					</div>
-				</div>
-			</div>
-
-			<!-- Row 1 -->
-			<div class="tile is-ancestor">
-				<div class="tile is-parent">
-					<article class="tile is-child">
-						<div class="card">
-							<div class="card-image">
-								<figure class="image is-4by3">
-									<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-								</figure>
-							</div>
-							<div class="card-content">
-								<p class="title is-4">ErgoDox</p>
-								<p class="subtitle is-6">Pan-pan, half split ortholinear keyboard.</p>
-								<div class="content">
-									My first 'custom' mechanical keyboard, of course it had to be outragous compared with all the ones
-									I've owned previously, which were just plain, plasic black slabs.
-								</div>
-							</div>
-						</div>
-					</article>
-				</div>
-				<div class="tile is-parent">
-					<article class="tile is-child">
-						<div class="card">
-							<div class="card-image">
-								<figure class="image is-4by3">
-									<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-								</figure>
-							</div>
-							<div class="card-content">
-								<p class="title is-4">NIU 45</p>
-								<p class="subtitle is-6">Pan-pan, half split ortholinear keyboard.</p>
-								<div class="content">
-									My first 'custom' mechanical keyboard, of course it had to be outragous compared with all the ones
-									I've owned previously, which were just plain, plasic black slabs.
-								</div>
-							</div>
-						</div>
-					</article>
-				</div>
-				<div class="tile is-parent">
-					<article class="tile is-child">
-						<div class="card">
-							<div class="card-image">
-								<figure class="image is-4by3">
-									<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-								</figure>
-							</div>
-							<div class="card-content">
-								<p class="title is-4">ErgoDox</p>
-								<p class="subtitle is-6">Pan-pan, half split ortholinear keyboard.</p>
-								<div class="content">
-									My first 'custom' mechanical keyboard, of course it had to be outragous compared with all the ones
-									I've owned previously, which were just plain, plasic black slabs.
-								</div>
-							</div>
-						</div>
-					</article>
-				</div>
-			</div>
-
-			<!-- Row 2 -->
-			<div class="tile is-ancestor">
-				<div class="tile is-parent">
-					<article class="tile is-child">
-						<div class="card">
-							<div class="card-image">
-								<figure class="image is-4by3">
-									<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-								</figure>
-							</div>
-							<div class="card-content">
-								<p class="title is-4">ErgoDox</p>
-								<p class="subtitle is-6">Pan-pan, half split ortholinear keyboard.</p>
-								<div class="content">
-									My first 'custom' mechanical keyboard, of course it had to be outragous compared with all the ones
-									I've owned previously, which were just plain, plasic black slabs.
-								</div>
-							</div>
-						</div>
-					</article>
-				</div>
-				<div class="tile is-parent">
-					<article class="tile is-child">
-						<div class="card">
-							<div class="card-image">
-								<figure class="image is-4by3">
-									<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-								</figure>
-							</div>
-							<div class="card-content">
-								<p class="title is-4">ErgoDox</p>
-								<p class="subtitle is-6">Pan-pan, half split ortholinear keyboard.</p>
-								<div class="content">
-									My first 'custom' mechanical keyboard, of course it had to be outragous compared with all the ones
-									I've owned previously, which were just plain, plasic black slabs.
-								</div>
-							</div>
-						</div>
-					</article>
-				</div>
-				<div class="tile is-parent">
-					<article class="tile is-child">
-						<div class="card">
-							<div class="card-image">
-								<figure class="image is-4by3">
-									<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-								</figure>
-							</div>
-							<div class="card-content">
-								<p class="title is-4">ErgoDox</p>
-								<p class="subtitle is-6">Pan-pan, half split ortholinear keyboard.</p>
-								<div class="content">
-									My first 'custom' mechanical keyboard, of course it had to be outragous compared with all the ones
-									I've owned previously, which were just plain, plasic black slabs.
-								</div>
-							</div>
-						</div>
-					</article>
 				</div>
 			</div>
 
