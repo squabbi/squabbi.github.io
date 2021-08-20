@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MaowDroid: Root Pixel Phones running Android 11</title>
+  <link rel="shortcut icon" type="image/jpg" href="../../assets/images/squabbi.png" />
+  <link rel="stylesheet" href="../../css/mystyles.css">
+</head>
+
+<body class="has-navbar-fixed-top">
+
+  <nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://squabbi.com">
+          <img src="../../assets/images/squabbi.png" height="28">
+        </a>
+
+        <!-- Mobile Nav Burger -->
+        <a id="burger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+          data-target="navbarMain">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarMain" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="../../">Home</a>
+          <a class="navbar-item" href="../../projects/">Projects</a>
+          <a class="navbar-item" href="../../keebs/">Keebs</a>
+          <a class="navbar-item is-active" href="../">MaowDroid</a>
+        </div>
+
+        <div class="navbar-end">
+          <a class="navbar-item" href="https://dogeings.squabbi.com/" target="_blank">Dogeings</a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">Presence</a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://youtube.com/c/maowdroid" target="_blank">YouTube (MaowDroid)</a>
+              <a class="navbar-item" href="https://instagram.com/squabbi.shibe" target="_blank">Instagram</a>
+              <a class="navbar-item" href="https://twitch.tv/squabbi" target="_blank">Twitch.tv</a>
+            </div>
+          </div>
+
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary" href="https://ko-fi.com/squabbi" target="_blank">
+                <span class="icon">
+                  <i class="fas fa-coffee"></i>
+                </span>
+                <span>Donate</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END NAVBAR -->
+
+  <section class="section">
+    <div class="container">
+
+      <!-- BREADCRUMBS -->
+      <div class="box is-hidden-mobile">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+          <ul>
+            <li><a href="../">MaowDroid</a></li>
+            <li class="is-active"><a href="#" aria-current="page">How to Root Google Pixel (2, 3/a, 4/a & XL) on Android
+                11</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Title -->
+      <div class="box block">
+        <div class="columns">
+          <div class="column">
+            <figure class="image is-16by9">
+              <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/sPvnmgon89U"
+                frameborder="0" allowfullscreen></iframe>
+            </figure>
+          </div>
+          <div class="column is-four-fiths">
+            <h1 class="title">
+              How to Root Google Pixel (2, 3/a, 4/a & XL) on Android 11
+            </h1>
+            <div class="subtitle">
+              Video Update & Information
+            </div>
+            <p><strong>Original Publish Date:</strong> 16 October, 2020</p>
+            <p>Please read over the changes that have occured since release, most of them are usually minor changes to
+              the process.</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <h4 class="title is-4">Changes to Magisk</h4>
+        <div class="block">
+          <div class="content">
+            <ul>
+              <li>Magisk Manager is no more! They've consolidated all Magisk realated things into just one thing: Magisk. When I talk about "Magisk Manager", I mean the "Magisk" app.</li>
+              <li>When patching your <code>boot.img</code> you'll see that the generated file name is not just <code>magisk_patched.img</code> anymore. Magisk now appends a random string to the end of the file. e.g. <code>cf0sla4</code>. So your command to pull the file might look like this now: <code>adb pull /sdcard/Download/magisk_patched-cf0sla4.img ..</code>.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h4 class="title is-4">Changes to SafetyNet</h4>
+        <div class="block">
+          <div class="content">
+            <p>
+              Recently Google have started implementing hardware backed attestation of SafetyNet, so the previous workarounds (e.g. just enabling Magisk Hide) no longer work.
+            </p>
+            <p>
+              For those running stock ROMs, you'll just need to install the <a href="https://github.com/kdrag0n/safetynet-fix" target="_blank" rel="noopener noreferrer">Universal SafetyNet Fix</a> Magisk Module by <a href="http://github.com/kdrag0n/" target="_blank" rel="noopener noreferrer">kdrag0n</a>, and reboot. You may have to clear the app data for Google Play Service and make sure you have the appropriate apps hidden with Magisk Hide as well.
+            </p>
+            <article class="message is-info">
+              <div class="message-header">
+                Note
+              </div>
+              <div class="message-body">
+                The default apps that Magisk hides already when you first enable Magisk Hide should be sufficient (Google Play Services & Google Pay), but you'll need to add in any other apps that you need to hide root & signs of a modded device from as well (e.g. Pokémon GO, Ingress Prime, Snapchat, your other banking apps, etc.).
+              </div>
+            </article>
+            <p>
+              If you're using a custom ROM, you'll also need to change your device's fingerprint to match one that is officially being used by Google Play certified devices. You can use the 'MagiskHide Props' Magisk Module and follow the prompts to change your device's fingerprint to one that looks official. It's probably good to choose the same device model that you're using.
+            </p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="block">
+          <p>
+            <em>Last updated 20 August 2021.</em>
+          </p>
+        </div>
+
+      </div>
+      <!-- End Section -->
+  </section>
+</body>
+
+<script src="../../js/index.js"></script>
+
+</html>
