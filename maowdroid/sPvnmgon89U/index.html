@@ -100,12 +100,29 @@
 
         <hr>
 
+        <article class="message is-info">
+          <div class="message-header">
+            Note
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <div class="message-body">
+            Hey! If you were coming from this video: <a href="https://www.youtube.com/watch?v=fYib1WNr2I8"
+              target="_blank" rel="noopener noreferrer">Update a Rooted Pixel Device to Android 11 (R) Final Release</a>
+            you haven't followed a broken link, but the changes to Magisk v22.0 and above are the same as outlined in
+            this video.
+          </div>
+        </article>
+
         <h4 class="title is-4">Changes to Magisk</h4>
         <div class="block">
           <div class="content">
             <ul>
-              <li>Magisk Manager is no more! They've consolidated all Magisk realated things into just one thing: Magisk. When I talk about "Magisk Manager", I mean the "Magisk" app.</li>
-              <li>When patching your <code>boot.img</code> you'll see that the generated file name is not just <code>magisk_patched.img</code> anymore. Magisk now appends a random string to the end of the file. e.g. <code>cf0sla4</code>. So your command to pull the file might look like this now: <code>adb pull /sdcard/Download/magisk_patched-cf0sla4.img ..</code>.</li>
+              <li>Magisk Manager is no more! They've consolidated all Magisk realated things into just one thing:
+                Magisk. When I talk about "Magisk Manager", I mean the "Magisk" app.</li>
+              <li>When patching your <code>boot.img</code> you'll see that the generated file name is not just
+                <code>magisk_patched.img</code> anymore. Magisk now appends a random string to the end of the file. e.g.
+                <code>cf0sla4</code>. So your command to pull the file might look like this now:
+                <code>adb pull /sdcard/Download/magisk_patched-cf0sla4.img ..</code>.</li>
             </ul>
           </div>
         </div>
@@ -114,21 +131,33 @@
         <div class="block">
           <div class="content">
             <p>
-              Recently Google have started implementing hardware backed attestation of SafetyNet, so the previous workarounds (e.g. just enabling Magisk Hide) no longer work.
+              Recently Google have started implementing hardware backed attestation of SafetyNet, so the previous
+              workarounds (e.g. just enabling Magisk Hide) no longer work.
             </p>
             <p>
-              For those running stock ROMs, you'll just need to install the <a href="https://github.com/kdrag0n/safetynet-fix" target="_blank" rel="noopener noreferrer">Universal SafetyNet Fix</a> Magisk Module by <a href="http://github.com/kdrag0n/" target="_blank" rel="noopener noreferrer">kdrag0n</a>, and reboot. You may have to clear the app data for Google Play Service and make sure you have the appropriate apps hidden with Magisk Hide as well.
+              For those running stock ROMs, you'll just need to install the <a
+                href="https://github.com/kdrag0n/safetynet-fix" target="_blank" rel="noopener noreferrer">Universal
+                SafetyNet Fix</a> Magisk Module by <a href="http://github.com/kdrag0n/" target="_blank"
+                rel="noopener noreferrer">kdrag0n</a>, and reboot. You may have to clear the app data for Google Play
+              Service and make sure you have the appropriate apps hidden with Magisk Hide as well.
             </p>
-            <article class="message is-info">
+            <article class="message is-primary">
               <div class="message-header">
-                Note
+                Info: Magisk Hide
+                <i class="fas fa-lightbulb"></i>
               </div>
               <div class="message-body">
-                The default apps that Magisk hides already when you first enable Magisk Hide should be sufficient (Google Play Services & Google Pay), but you'll need to add in any other apps that you need to hide root & signs of a modded device from as well (e.g. Pokémon GO, Ingress Prime, Snapchat, your other banking apps, etc.).
+                The default apps that Magisk hides already when you first enable Magisk Hide should be sufficient
+                (Google Play Services & Google Pay), but you'll need to add in any other apps that you need to hide root
+                & signs of a modded device from as well (e.g. Pokémon GO, Ingress Prime, Snapchat, your other banking
+                apps, etc.).
               </div>
             </article>
             <p>
-              If you're using a custom ROM, you'll also need to change your device's fingerprint to match one that is officially being used by Google Play certified devices. You can use the 'MagiskHide Props' Magisk Module and follow the prompts to change your device's fingerprint to one that looks official. It's probably good to choose the same device model that you're using.
+              If you're using a custom ROM, you'll also need to change your device's fingerprint to match one that is
+              officially being used by Google Play certified devices. You can use the 'MagiskHide Props' Magisk Module
+              and follow the prompts to change your device's fingerprint to one that looks official. It's probably good
+              to choose the same device model that you're using.
             </p>
           </div>
         </div>
